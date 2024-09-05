@@ -62,11 +62,20 @@ bool KMP(string& text, string& pattern){
 
 //Calls all function variations
 void KMPCaller(string& t1, string& t2, string& m1, string& m2, string& m3){
+  cout << "\nSearching for the malicious code in the transmission:";
+  cout << "\nTransmission 1:" << endl;
+  cout << "Malicious code 1:" << endl;
   KMP(t1, m1);
+  cout << "Malicious code 2:" << endl;
   KMP(t1, m2);
+  cout << "Malicious code 3:" << endl;
   KMP(t1, m3);
+  cout << "\nTransmission 2:" << endl;
+  cout << "Malicious code 1:" << endl;
   KMP(t2, m1);
+  cout << "Malicious code 2:" << endl;
   KMP(t2, m2);
+  cout << "Malicious code 3:" << endl;
   KMP(t2, m3);
 
 }

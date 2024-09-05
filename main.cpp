@@ -80,16 +80,11 @@ int main(){
   } 
   mCode3.close();
 
-  //// Searching for the longest palindrome's position
-  //cout << "Longest palindrome's position:" << endl;
-  //cout << "\nTransmission 1:" << endl;
-  //cout << t1 << endl;
-  //manacher(t1);
-//
-  //cout << "\nTransmission 2:" << endl;
-  //cout << t2 << endl;
-  //manacher(t2);
+  // Searching for the longest palindrome's position
+  manacherCaller(t1, t2);
 
+
+  // Searching for the malicious code in the transmission
   KMPCaller(t1, t2, m1, m2, m3);
 
   return 0;

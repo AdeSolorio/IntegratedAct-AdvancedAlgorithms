@@ -59,3 +59,12 @@ void manacher(string &s){
     int end = start + lengthL - 1;
     cout << start << " " << end << endl;
 }
+
+void manacherCaller(string &t1, string &t2){
+    cout << "Longest palindrome's position:";
+    cout << "\nTransmission 1:" << endl;
+    manacher(t1);
+
+    cout << "\nTransmission 2:" << endl;
+    manacher(t2);
+}
