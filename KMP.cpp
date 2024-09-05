@@ -10,7 +10,7 @@ using namespace std;
 
 //Compute Prefix Function
 //Generates the list of how many steps of the pattern can be skipped
-//O()
+//O(m)
 vector<int> CPF(string& pattern){
   int m = pattern.size();
   vector<int> prefix(m);
@@ -33,7 +33,7 @@ vector<int> CPF(string& pattern){
 
 //KMP Search
 //Searches the pattern throughout the text
-//O()
+//O(m + n)
 bool KMP(string& text, string& pattern){
   int n = text.size();
   int m = pattern.size();
@@ -61,6 +61,7 @@ bool KMP(string& text, string& pattern){
 
 
 //Calls all function variations
+//O(p(m + n))
 void KMPCaller(string& t1, string& t2, string& m1, string& m2, string& m3){
   KMP(t1, m1);
   KMP(t1, m2);
