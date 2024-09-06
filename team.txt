@@ -1,0 +1,3 @@
+Adela Alejandra Solorio Alcázar A01637205 did the Manacher algorithm and documentation
+Andrés Benjamín Antelis Moreno A01637683 did the Longest Common Substring algorithm and documentation
+Gustavo García Téllez A01644060 did the KMP algorithm and documentation

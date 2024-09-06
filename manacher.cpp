@@ -4,6 +4,8 @@
 #include <string>
 using namespace std;
 
+// Preposses the string to be odd by adding special characters
+// O(n)
 string turnOdd(string &s){
     string oddString = "@#";
 
@@ -16,7 +18,9 @@ string turnOdd(string &s){
     return oddString;
 }
 
-
+// Manacher's algorithm
+// Checks for the longest palindrome in the string
+// O(n)
 void manacher(string &s){
     string pString = turnOdd(s);
     int c = 0, r = 0;
@@ -60,6 +64,7 @@ void manacher(string &s){
     cout << start << " " << end << endl;
 }
 
+// Calls the manacher function for both files
 void manacherCaller(string &t1, string &t2){
     cout << "Longest palindrome's position:";
     cout << "\nTransmission 1:" << endl;
