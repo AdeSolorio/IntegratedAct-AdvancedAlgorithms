@@ -6,8 +6,9 @@ using namespace std;
 
 #include "manacher.h"
 #include "KMP.h"
+#include "lcs.h"
 
-// to compile: g++ main.cpp manacher.cpp KMP.cpp -o main
+// to compile: g++ main.cpp KMP.cpp manacher.cpp lcs.cpp -o main
 // to run: ./main
 
 int main(){
@@ -80,12 +81,14 @@ int main(){
   } 
   mCode3.close();
 
+  // Searching for the malicious code in the transmission
+  KMPCaller(t1, t2, m1, m2, m3);
+
   // Searching for the longest palindrome's position
   manacherCaller(t1, t2);
 
-
-  // Searching for the malicious code in the transmission
-  KMPCaller(t1, t2, m1, m2, m3);
+  // Searching for the longest common substring in the transmission
+  lcsCaller(t1, t2);
 
   return 0;
 }
