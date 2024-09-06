@@ -20,7 +20,7 @@ std::pair<int, int> lcs(const std::string &str1, const std::string &str2) {
         return std::make_pair(-1, -1);
     }
 
-    std::vector<std::vector<int>> dpMatrix(size1 + 1, std::vector<int>(size2 + 1, 0));
+    std::vector< std::vector<int> > dpMatrix(size1 + 1, std::vector<int>(size2 + 1, 0));
 
     int maxLength = 0;
     int endIndex = 0;
